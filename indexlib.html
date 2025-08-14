@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scpuclib</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="C:\Users\soundarya.soundarya-PC\Desktop\webbuild\Lat\styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --text: #1f2937;
+            --light: #f8fafc;
+            --dark: #111827;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .nav-item::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--light);
+            transition: width 0.3s;
+        }
+        
+        .nav-item:hover::after {
+            width: 100%;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            ring: 2px solid var(--accent);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.dot:hover {
+    opacity: 1;
+}
+
+/* Add a simple animation using the :nth-child pseudo-class */
+@keyframes carouselAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+  33% {
+        transform: translateX(-100%);
+}
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+
+.carousel-images {
+    animation: carouselAnimation 12s infinite;
+}
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+<img src="scpuclg.jpg" alt="scpuc" width="50" height="50">
+                    <a href="#" class="text-2xl font-bold text-gray-800">Soundarya Composite P.U.College - Library</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="https://soundaryapucollege.com/" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="https://pue.karnataka.gov.in/new-page/TEXT+BOOKS/kn" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target='_blank'>e-books</a>
+                    <a href="https://dpue-pragathi.karnataka.gov.in/question_bank/mqp.html" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target='_blank'>Question papers</a>
+                    <a href="#contact" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300">Ask Library?</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-gray-800 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 flex flex-col justify-center py-6 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Welcome to SCPUC Library</h1>
+                    <p class="text-xl mb-8">Our library is set in an environment where it can inculcate the reading habits to our students. This library is rich in collection with more than 7000+ books. We do provide importance to the knowlege where it can lead our students towards bright future. We have specialized collections on KCET/NEET/JEE and for other competitive exams too. We do implemented the digital library for up-to-date information seekers of our users.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <p hidden><button class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">Get start </button></p hidden>
+                        <p hidden><button class="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">Learn More</button></p>
+                    </div>
+                </div>
+
+    <div class="carousel">
+        <div class="carousel-images">
+	<img src="./Library img.jpeg" alt="Image 1">
+            <img src="./Jrnl_rack.jpg" alt="Image 2">
+            <img src="./Lib2.jpg" alt="Image 3">
+            <img src="./Jrnl_rack.jpg" alt="Image 4">
+            <img src="./Lib2.jpg" alt="Image 5">
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Library at a glance</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our library offers everything you need to succeed in your life.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Syllabus based book collections</h3>
+                    <p class="text-gray-600">Library is well maintained with required text books to suffice the student requirements.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Journals &amp; magazines</h3>
+                    <p class="text-gray-600">We have 13 journals and magazines as secondary source to update the student knowledge. Also, daily news papers to gain knowledge on current affairs</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Special collections</h3>
+                    <p class="text-gray-600">We have special collections on CET/JEE/NEET, our faculties curated materials is helped lot of aspirants attain the objectives.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Library committee</h3>
+                    <p class="text-gray-600">Easily adjust colors, layouts and content to match your brand.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Library timings</h3>
+                    <p class="text-gray-600">9:00 AM to 6:30 PM<br> Holidays library will remain closed</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Library staff</h3>
+<div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+
+                        <img src="C:\Users\soundarya.soundarya-PC\Desktop\webbuild\imran.jpg" alt="SI" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Syed Imran Ulla</h4>
+                            <p class="text-gray-600 text-sm">Librarian</p></div>
+
+                  <div>
+	<img src="C:\Users\soundarya.soundarya-PC\Desktop\yogesh per\arun.jpeg" alt="SI" class="w-12 h-12 rounded-full mr-4">
+                            <h4 class="font-semibold">Arun Kumar D</h4>
+                            <p class="text-gray-600 text-sm">Librarian</p></div>
+	<div>
+	<img src="C:\Users\soundarya.soundarya-PC\Desktop\yogesh per\yogi.jpg" alt="SI" class="w-12 h-12 rounded-full mr-4">
+                            <h4 class="font-semibold">Yogesh N</h4>
+                            <p class="text-gray-600 text-sm">Library Ast.</p></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ask Library?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">For quiries.</p>
+            </div>
+            
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+
+
+                                </div>
+
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Phone </h4>
+                                    <p class="text-gray-600">(Extn.202)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-gray-600">scpuclib@soundaryainstitutions.in</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Hours</h4>
+                                    <p class="text-gray-600">Monday - Saturday: 9AM - 6:30PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SCPUC Library</h3>
+                    <p class="text-gray-400">Building digital experiences that inspire and drive results.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="https://www.facebook.com/SoundaryaPuc/" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/soundaryacompositepucollege" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/soundaryacompositepucollege/?igsh=eHR0NHEza2txODc2#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/soundaryacompositepucollege" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://soundaryapucollege.com/" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="https://soundaryapucollege.com/admission-process/" class="text-gray-400 hover:text-white transition duration-300">Admission</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Book borrowing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Reference section</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Digital Library</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mentorship</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 SCPUC. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                   <p hidden <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Sitemap</a> </p hidden>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex justify-end">
+                <button id="closeMenu" class="text-white text-3xl focus:outline-none">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mt-12 flex flex-col items-center space-y-8">
+                <a href="https://soundaryapucollege.com/" class="text-white text-2xl">Home</a>
+                <a href="#features" class="text-white text-2xl">At a glance</a>
+                <a href="#testimonials" class="text-white text-2xl">Testimonials</a>
+                <a href="#contact" class="text-white text-2xl">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
