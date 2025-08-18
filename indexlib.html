@@ -105,6 +105,7 @@ body {
 .carousel-images img {
     width: 100%;
     height: auto;
+	object-fit: cover;
     display: block;
 }
 
@@ -132,6 +133,16 @@ body {
 }
 
 /* Add a simple animation using the :nth-child pseudo-class */
+	@keyframes slide {
+		0% {transform: translateX(0%);}
+		20% {transform: translateX(0%);}
+		25% {transform: translateX(-100%);}
+		45% {transform: translateX(-100%);}
+		50% {transform: translateX(-200%);}
+		70% {transform: translateX(-200%);}
+		75% {transform: translateX(-300%);}
+		95% {transform: translateX(-300%);}
+		0% {transform: translateX(0%);}
 @keyframes carouselAnimation {
     0% {
         transform: translateX(0);
@@ -405,6 +416,7 @@ body {
     </div>
 </body>
 </html>
+
 
 
 
