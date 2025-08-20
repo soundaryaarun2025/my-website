@@ -93,10 +93,6 @@ body {
     overflow: hidden;
 }
 
-.slides {
-	display: flex;
-	animation: silde 0.5s infinite;
-}
 .carousel-images {
     display: flex;
     transition: transform 0.5 s ease-in-out;
@@ -163,10 +159,10 @@ body {
     }
 
 
-/*.carousel-images {
+.carousel-images {
     animation: carouselAnimation 12s infinite;
-}*/
-    </style>
+}
+    
 	function moveSlide(direction) {
     const slides = document.querySelectorAll('.carousel-item');
     const dots = document.querySelectorAll('.dot');
@@ -191,7 +187,7 @@ body {
         }
     });
 }
-
+</style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -229,7 +225,7 @@ body {
                 </div>
 
     <div class="carousel">
-        <div class="slides">
+        <div class="carousel-images">
 			<img src="Library img.jpeg" alt="Image 1">
             <img src="Jrnl_rack.jpg" alt="Image 2">
             <img src="Lib2.jpg" alt="Image 3">
@@ -444,6 +440,7 @@ body {
     </div>
 </body>
 </html>
+
 
 
 
