@@ -54,13 +54,12 @@
             width: 100%;
         }
         
-        input:focus, textarea:focus {
-            outline: none;
-            ring: 2px solid var(--accent);
-        }
-        
-       
-        
+		input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+              
         .animate-fade-in {
             animation: fadeIn 1s ease forwards;
         }
@@ -72,8 +71,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
+
+		
 
 .carousel {
     position: relative;
@@ -84,9 +89,9 @@ body {
     overflow: hidden;
 }
 
-.carousel-images {
+	.carousel-images {
     display: flex;
-    transition: transform 0.5 s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images img {
@@ -159,28 +164,17 @@ body {
 		0% {transform: translateX(0%);}*/
 		
 @keyframes carouselAnimation {
-    0% {
-        transform: translateX(0);
-    }
-
-  33% {
-        transform: translateX(-100%);
+  0%, 20% { transform: translateX(0%); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
 }
-    33% {
-        transform: translateX(-100%);
-    }
-    66% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-
 
 .carousel-images {
-    animation: carouselAnimation 1s infinite;
+  animation: carouselAnimation 20s infinite;
 }
-    
+  
 </style>
 
   <script>
@@ -202,8 +196,8 @@ body {
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="https://soundaryapucollege.com/" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
-                    <a href="https://pue.karnataka.gov.in/new-page/TEXT+BOOKS/kn" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target='_blank'>e-books</a>
-                    <a href="https://dpue-pragathi.karnataka.gov.in/question_bank/mqp.html" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target='_blank'>Question papers</a>
+                    <a href="https://pue.karnataka.gov.in/new-page/TEXT+BOOKS/kn" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target="_blank">e-books</a>
+                    <a href="https://dpue-pragathi.karnataka.gov.in/question_bank/mqp.html" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300", target="_blank">Question papers</a>
                     <a href="#contact" class="nav-item text-gray-800 hover:text-blue-600 transition duration-300">Ask Library?</a>
                 </div>
                 <button class="md:hidden focus:outline-none">
@@ -473,6 +467,7 @@ setInterval(() => {
 		</script>
 </body>
 </html>
+
 
 
 
